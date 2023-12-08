@@ -42,6 +42,10 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+group :production do
+  gem "pg", "1.2.3"
+end
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "1.6"
