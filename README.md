@@ -40,3 +40,9 @@ Things you may want to cover:
 - rails db:rollback 数据库回撤
 - assert_response :success  判断response 内容
 - assert_select :title, "xxx"  判断 标题内容
+
+2023-12-16 12:53:50  学习ruby 基本语法
+- 对象使用就是响应方法
+- 下意识的语法很多   if   unless 相反
+- range 创建好快
+- rails console 快速进入  irb
