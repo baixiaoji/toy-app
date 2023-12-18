@@ -46,3 +46,6 @@ Things you may want to cover:
 - 下意识的语法很多   if   unless 相反
 - range 创建好快
 - rails console 快速进入  irb
+
+2023-12-17 22:59:35 继续学习基本语法
+- 块，数组
