@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/new'
   # get 'static_pages/home'
   # get 'static_pages/help'
   get 'help', to: "static_pages#help"  # , as: "helf"
@@ -7,6 +6,8 @@ Rails.application.routes.draw do
   get 'about', to: 'static_pages#about'
   # get 'static_pages/contract'
   get 'contract', to: 'static_pages#contract'
+
+  get '/signup', to: "users#new"
 
   resources :microposts
   resources :users
