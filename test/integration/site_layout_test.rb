@@ -11,4 +11,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get contract_path
     assert_select "title", full_title("Contract")
   end
+
+  test "sign up page" do
+    get signup_path
+    assert_select "title", full_title("Sign up")
+  end
 end
