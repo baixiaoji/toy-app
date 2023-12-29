@@ -8,5 +8,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contract_path
+    get contract_path
+    assert_select "title", full_title("Contract")
   end
 end
