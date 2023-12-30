@@ -39,4 +39,16 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+  test "email addresses should be unique" do
+    duplicate_user = @user.dup
+    @user.save
+    assert_not duplicate_user.valid?
+  end
+
+  test "email save should downcase" do
+    mixed_CASE_Email = "AJEA@fire.com"
+    @user.email = mixed_CASE_Email
+    @user.save
+    assert_equal mixed_CASE_Email.downcase, @user.reload.email
+  end
 end
