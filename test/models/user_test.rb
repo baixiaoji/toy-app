@@ -30,5 +30,13 @@ class UserTest < ActiveSupport::TestCase
   end
 
 
-  
+  test "email validation should accept valid addresses" do
+    valid_addresses = %w[user@example.com User@fooo.com A_US-Er@foo.bar.org first.last@fpp.jp alice+bob@bza.cn]
+
+    valid_addresses.each do |valid_address|
+      @user.email = valid_address
+      assert @user.valid?, "#{valid_address} should be valid"
+    end
+  end
+
 end
