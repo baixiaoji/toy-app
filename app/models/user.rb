@@ -6,4 +6,7 @@ class User < ApplicationRecord
     validates :email, presence: true, length: { maximum: 200 }, 
                       format: { with: VALID_EMAIL_REGEX },
                       uniqueness: true
+    # 添加 安全验证
+    has_secure_password
+    validates :password, presence: true, length: { minimum: 6 }
 end
