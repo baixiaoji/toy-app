@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/signup', to: "users#new"
 
   resources :microposts
+  # 符合 RESTFul  风格
   resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # root 'users#index'

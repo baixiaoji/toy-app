@@ -49,3 +49,7 @@ Things you may want to cover:
 
 2023-12-17 22:59:35 继续学习基本语法
 - 块，数组
+
+2023-12-31 09:57:27 创建语法
+- debugger 终端进行debugger
+- object to_yaml
