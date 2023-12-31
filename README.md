@@ -53,3 +53,4 @@ Things you may want to cover:
 2023-12-31 09:57:27 创建语法
 - debugger 终端进行debugger
 - object to_yaml
+- form_with rails@7 下需要添加 data: { turbo: false }  参数，否则重新渲染页面异常
