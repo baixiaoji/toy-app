@@ -8,5 +8,5 @@ class User < ApplicationRecord
                       uniqueness: true
     # 添加 安全验证
     has_secure_password
-    validates :password, presence: true, length: { minimum: 6 }
+    validates :password, presence: true, length: { minimum: 5 }
 end
