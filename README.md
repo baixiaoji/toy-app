@@ -54,3 +54,7 @@ Things you may want to cover:
 - debugger 终端进行debugger
 - object to_yaml
 - form_with rails@7 下需要添加 data: { turbo: false }  参数，否则重新渲染页面异常
+
+
+2024-01-01 15:54:12 
+- 重置数据库  rails db:migrate:reset
