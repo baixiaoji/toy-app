@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/signup', to: "users#new"
   get '/login', to: "sessions#new"
   post '/login', to: "sessions#create"
-  delete '/logout', to: "sessions#destory"
+  delete '/logout', to: "sessions#destroy"
 
   resources :microposts
   # 符合 RESTFul  风格
