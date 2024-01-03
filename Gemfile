@@ -6,7 +6,7 @@ ruby "3.0.0"
 gem "rails", "~> 7.1.1" # 安装版本号 >= 7.1.1 & 不大于 8
 
 gem "bcrypt", "3.1.13"
-gem "bootstrap-sass", "3.4.1"
+# gem "bootstrap-sass", "3.4.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -77,3 +77,8 @@ group :test do
   gem "webdrivers"
   gem "rails-controller-testing"
 end
+
+gem "bootstrap", "~> 5.3"
+gem 'sassc-rails'
+gem 'jquery-rails'
+

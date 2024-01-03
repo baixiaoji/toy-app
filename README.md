@@ -58,3 +58,9 @@ Things you may want to cover:
 
 2024-01-01 15:54:12 
 - 重置数据库  rails db:migrate:reset
+
+2024-01-03 
+- css 中 *= require_tree .   *= require_self 是引用自己目录的逻辑
+- importmap ror 7 如何引入 jquery & bootstrap 【新人来说太难】
+- https://dev.to/coorasse/rails-7-bootstrap-5-and-importmaps-without-nodejs-4g8
+- https://www.reddit.com/r/rails/comments/y81vkk/rails_7_with_bootstrap_and_jquery_its_so/
