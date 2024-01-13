@@ -11,5 +11,10 @@ module ActiveSupport
     fixtures :all
     include ApplicationHelper
     # Add more helper methods to be used by all tests here...
+
+    #如何用户已登录，返回 true
+    def is_logged_in?
+      !session[:user_id].nil?
+    end
   end
 end
